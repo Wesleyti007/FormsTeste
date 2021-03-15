@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Forms.Data;
+using Forms.Services;
 
 namespace Forms
 {
@@ -41,6 +42,7 @@ namespace Forms
                     builder.MigrationsAssembly("Forms")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
