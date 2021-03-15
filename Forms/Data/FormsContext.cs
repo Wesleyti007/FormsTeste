@@ -15,5 +15,9 @@ namespace Forms.Data
         }
 
         public DbSet<Forms.Models.Departament> Departament { get; set; }
+        public DbSet<Forms.Models.Seller> Seller { get; set; }
+        public DbSet<Forms.Models.SalesRecord> SalesRecords { get; set; }
+
+
     }
 }
